@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+
+		* {
+			background: #FAFAFA;
+			font-family: 'Courier New', Courier, monospace;
+			margin: 0 auto;
+			padding: 0;
+		}
+		h1{
+			text-align: center;
+			padding: 2rem;
+			text-decoration: underline;
+			background-color: #f0f0f0;
+			margin-bottom: 1rem;
+		}
+
+		form {
+			display: flex;
+			align-items: center;
+			flex-direction: column;
+		}
+
+		input[type='submit'] {
+			color: #fafaf2;
+			background-color: rgb(99, 146, 173);
+			padding: .5rem;
+			font-weight: 700;
+			font-size: 1.5rem;
+			border-radius: 10px;
+			box-shadow: 3px 3px black;
+		}
+
+
+
+	</style>
+</head>
+<body>
+	<h1>Regestration Form</h1>
+	<form action="process" method="post">
+		<label for="f-name">First name</label>
+		<input type="text" name="first-name" id="f-name">
+		<br>
+		<label for="L-name">Last name</label>
+		<input type="text" name="last-name" id="l-name">
+		<br>
+
+		<label for="email"> email:</label>
+		<input type="email" name="email" id="email">
+		<br>
+
+		<label for="password">password</label>
+		<input type="password" name="password" id="password">
+		<br>
+
+		<label for="confirm-password">confirm-password</label>
+		<input type="password" name="confirm-password" id="confirm-password">
+		<br>
+		<label for="birthday">Birthday</label>
+		<label>Gender</label>
+		<br>
+		<label for="male">Male</label>
+		<input type="radio" name="male" id="male">
+		<label for="female">Female</label>
+		<input type="radio" name="female" id="female">
+		<br>
+		<label for="description">short description about me:</label>
+		<br>
+		<textarea name="description" id="description" cols="20" rows="10"></textarea>
+		<br>
+		<label for="language">favorite Language</label>
+		<select name="language" id="language">
+			<option value="javascript">Java Script</option>
+			<option value="python">Python</option>
+			<option value="java">Java</option>
+		</select>
+		<br>
+		<input type="checkbox" name="agree" id="terms">
+		<label for="terms">I agree on term of use.</label>
+		<br>
+		<input type="submit" name="submit">
+	</form>
+</body>
+</html>
